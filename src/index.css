@@ -22,6 +22,7 @@ body {
 @media screen and (min-width: 768px) {
   .booklist {
     grid-template-columns: repeat(3, 1fr);
+    align-items: start;
   }
 }
 .book {
@@ -30,6 +31,11 @@ body {
   padding: 2rem;
   text-align: center;
 }
+.book p {
+  margin: 1rem 0 0.5rem;
+  max-height: calc(2 * 1.4em);
+  -webkit-line-clamp: 2;
+}
 .book img {
   width: 100%;
   object-fit: cover;
@@ -37,4 +43,15 @@ body {
 .book h2 {
   margin-top: 1rem;
   font-size: 1rem;
+  -webkit-line-clamp: 1;
+}
+
+.book h2,
+p {
+  display: -webkit-box;
+  width: 100%;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
 }
