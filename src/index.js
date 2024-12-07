@@ -3,22 +3,49 @@ import ReactDOM from 'react-dom/client'
 
 import './index.css'
 
-const image = 'https://m.media-amazon.com/images/I/71K+9YJ7VbL._SY522_.jpg'
-const title =
-  'Dog Man: Big Jim Begins: A Graphic Novel (Dog Man #13): From the Creator of Captain Underpants'
-const author = 'Dav Pilkey'
+const firstBook = {
+  image: 'https://m.media-amazon.com/images/I/71K+9YJ7VbL._SY522_.jpg',
+  title:
+    'Dog Man: Big Jim Begins: A Graphic Novel (Dog Man #13): From the Creator of Captain Underpants',
+  author: 'Dav Pilkey',
+}
+
+const secondBook = {
+  image: 'https://m.media-amazon.com/images/I/41e+dwz5W5L._SY522_.jpg',
+  title: 'Melania Hardcover – October 8, 2024',
+  author: 'Melania Trump',
+}
+
+const thirdBook = {
+  image: 'https://m.media-amazon.com/images/I/81paxLbonYL._SY522_.jpg',
+  title: `From Crook to Cook: Platinum Recipes from Tha Boss Dogg's Kitchen (Snoop Dogg Cookbook, Celebrity Cookbook with Soul Food Recipes) (Snoop Dog x Chronicle Books)`,
+  author: 'Snoop Dogg',
+}
 
 const BookList = () => {
   return (
     <section className="booklist">
-      <Book image={image} title={title} author={author} />
-      <Book image={image} title={title} author={author} />
-      <Book image={image} title={title} author={author} />
+      <Book
+        image={firstBook.image}
+        title={firstBook.title}
+        author={firstBook.author}
+      />
+      <Book
+        image={secondBook.image}
+        title={secondBook.title}
+        author={secondBook.author}
+      />
+      <Book
+        image={thirdBook.image}
+        title={thirdBook.title}
+        author={thirdBook.author}
+      />
     </section>
   )
 }
 
 const Book = (props) => {
+  console.log(props)
   return (
     <article className="book">
       <img src={props.image} alt={props.title} width={192} height={285} />
