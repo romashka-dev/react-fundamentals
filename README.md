@@ -1,5 +1,7 @@
 # React Fundamentals
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/44602f44-6361-4ab3-abf0-731391d71907/deploy-status)](https://app.netlify.com/sites/reactjs-amazon-best-sellers/deploys)
+
 #### React Course: Complete React, Next.js & TypeScript Projects Course 2024 (Created by John Smilga)
 
 [Link](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
