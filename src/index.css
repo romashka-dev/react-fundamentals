@@ -11,6 +11,12 @@ body {
   color: #222;
 }
 
+h1 {
+  text-align: center;
+  margin-top: 4rem;
+  text-transform: capitalize;
+}
+
 .booklist {
   width: 90vw;
   max-width: 1170px;
@@ -19,28 +25,26 @@ body {
   gap: 2rem;
 }
 
-@media screen and (min-width: 768px) {
-  .booklist {
-    grid-template-columns: repeat(3, 1fr);
-    align-items: start;
-  }
-}
 .book {
+  position: relative;
   background: #fff;
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
 }
+
 .book p {
   margin: 1rem 0 0.5rem;
   max-height: calc(2 * 1.4em);
   text-align: left;
   -webkit-line-clamp: 2;
 }
+
 .book img {
   width: 100%;
   object-fit: contain;
 }
+
 .book h2 {
   margin-top: 1rem;
   font-size: 1rem;
@@ -59,4 +63,23 @@ p {
   word-break: break-word;
   overflow: hidden;
   -webkit-box-orient: vertical;
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #c35600;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
 }
