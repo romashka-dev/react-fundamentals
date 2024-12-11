@@ -1,6 +1,6 @@
 # React Fundamentals
 
-#### React Course
+#### React Course: Complete React, Next.js & TypeScript Projects Course 2024
 
 [Link](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
 
